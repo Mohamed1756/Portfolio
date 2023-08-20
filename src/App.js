@@ -24,18 +24,13 @@ function App() {
              <div class="Skills-category">
                 <h4>Backend: Node.js | Rest API | PostMan | SpringBoot </h4>
              </div>
-          </div>
+         </div>
        </div>
-    </div>
+    
     <div className='Certificates-section'>
        <h2>Certificates</h2>
        <div className="Certificate-list">
-          <div className="Certificate-item">
-             <a href="link_to_certificate1" target="_blank" rel="noopener noreferrer">
-             <img src="azure.svg" alt="azure img" />
-             </a> 
-             (Microsoft Azure Fundamentals: <a href="https://www.microsoft.com/en-us/learning/exam-az-900.aspx" target="_blank" rel="noopener noreferrer">AZ-900</a>)
-          </div>
+          
           <div className="Certificate-item">
              <a href="link_to_certificate2" target="_blank" rel="noopener noreferrer">
              <img src="azure.svg" alt="azure img" />
@@ -50,43 +45,51 @@ function App() {
           </div>
        </div>
     </div>
+    </div>
     <div className='Projects-section'>
-       <span className="CV-icon">
+       <span className="Contact-icon">
        <img src="arrow-right.svg" alt="arrow-img" />
        <a href="/">Explore Projects</a>
        </span>
     </div>
-    <div className='CV-Contact-section'>
-       <div className="Contact-section">
-          <h2>Contact</h2>
-          <p>
-             <span className="Contact-icon">
-             <img src="/envelope-solid.svg" alt="Email" />
-             <a href="mailto:Mohamed.m365@outlook.com">Email</a>
-             </span><br />
-             <span className="Contact-icon">
-             <img src="square-github.svg" alt="GitHub" />
-             <a href="https://github.com/Mohamed1756">GitHub</a>
-             </span><br />
-             <span className="Contact-icon">
-             <img src="Linkedin.svg" alt="LinkedIn" />
-             <a href="https://www.linkedin.com/in/mohamed-m-87a213214/">LinkedIn</a>
-             </span><br />
-          </p>
-       </div>
-       <div className="CV-section">
-          <h2>CV</h2>
-          <div className="CV-content">
-             <span className="CV-icon">
-             <img src="CV.svg" alt="CV-img" />
-             </span>
-             <a className="CV-button" href="/MohamedCV.pdf" target="_blank" rel="noopener noreferrer">
+
+   <div className='CV-Contact-section'>
+      <div class="Contact-section">
+         <h2>Contact</h2>
+         <div class="Contact-columns">
+            <div class="Contact-col">
+               <span class="Contact-icon">
+               <img src="/envelope-solid.svg" alt="Email" />
+               </span>
+               <a href="mailto:Mohamed.m365@outlook.com">Email</a>
+            </div>
+            <div class="Contact-col">
+               <span class="Contact-icon">
+               <img src="square-github.svg" alt="GitHub" />
+               </span>
+               <a href="https://github.com/Mohamed1756">GitHub</a>
+            </div>
+            <div class="Contact-col">
+               <span class="Contact-icon">
+               <img src="Linkedin.svg" alt="LinkedIn" />
+               </span>
+               <a href="https://www.linkedin.com/in/mohamed-m-87a213214/">LinkedIn</a>
+            </div>
+         </div>
+      </div>
+
+      <div className="CV-section">
+         <h2>CV</h2>
+         <div className="CV-content">
+            
+            <a className="CV-button" href="/MohamedCV.pdf" target="_blank" rel="noopener noreferrer">
              Download My CV (PDF)
-             </a>
-          </div>
-       </div>
-    </div>
+            </a>
+         </div>
+      </div>
+   </div>
  </div>
+
   
   
   );

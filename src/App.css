@@ -6,7 +6,7 @@ body {
 .App {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items:center;
   min-height: 100vh;
 }
 
@@ -33,20 +33,24 @@ body {
   align-items: flex-start;
   padding: 20px 20px;
   text-align: left;
-  border: 1px solid #ddd;
-  margin: 20px 0;
+  
+  margin: 0px 0;
+  height:auto;
+}
+.Skills-section h2{
+ text-align: center;
 }
 
 .Skills-section,
 .Certificates-section {
   flex: 1;
-  padding: 0 100px;
+  padding: 0 20px; /* Adjust padding for both sections */
 }
 
 .Skills-table {
-  display: grid; /* Use grid layout for the table */
-  grid-template-columns: repeat(2, 1fr); /* Create 2 columns with equal width */
-  gap: 0px 50px; /* Add gap between grid items */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0px 50px;
 }
 
 .Skills-category {
@@ -61,11 +65,32 @@ body {
   white-space: nowrap;
 }
 
+.Certificates-section {
+  border-left: 1px solid #ddd; /* Add a border on the left side */
+  
+}
+
+.Certificate-list {
+  display: flex; /* Display certificates in a row */
+  flex-wrap: wrap; /* Allow wrapping when space is limited */
+  align-items: flex-start;
+  margin-top: 20px; /* Add some spacing between the border and certificates */
+}
+
 .Certificate-item {
-  margin-bottom: 20px;
+  flex-basis: calc(50% - 15px); /* Adjust width to fit two items in a row with some spacing */
+  margin-left: 50px; /* Add spacing between certificate items */
+  margin-top: 20px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  display: flex;
+  align-items: center;
+  
+}
+.Certificates-section h2 {
+  margin-left: 100px;
+ 
 }
 
 .Certificate-item img {
@@ -74,37 +99,65 @@ body {
   margin-right: 10px;
 }
 
-/* Projects and CV-Contact Sections */
+.Projects-section{
+  text-align: center;
+  margin-top: 100px;
+}
 .CV-Contact-section {
   display: flex;
   justify-content: space-between;
-  align-items: stretch; /* Adjust as needed */
+  align-items: flex-start;
+  padding: 20px 20px;
+  text-align: left;
+  margin: 0px 0;
 }
 
-.Projects-section,
-.CV-Contact-section {
+.Contact-section {
   flex: 1;
-  padding: 40px 20px;
   text-align: center;
-  background-color: white;
-  border: 1px solid #ddd;
-  margin: 20px 0;
+  margin: 50px 20px;
 }
 
-
-.CV-section h2,
-.Contact-section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: rgb(59, 77, 3);
+.CV-section {
+  flex: 1;
+  text-align: center;
+  margin: 50px 20px;
 }
 
-.CV-icon img,
+.Contact-columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Contact-col {
+  flex: 1;
+  text-align: center;
+}
+
 .Contact-icon img {
   width: 30px;
   height: 30px;
   vertical-align: middle;
   margin-right: 10px;
+}
+
+.Contact-col a {
+  display: block;
+  font-size: 1.2rem;
+  color: rgb(59, 77, 3);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.Contact-col a:hover {
+  color: #0056b3;
+}
+
+.CV-Contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: rgb(59, 77, 3);
 }
 
 .CV-button {
