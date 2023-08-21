@@ -109,17 +109,12 @@ body {
   align-items: flex-start;
   padding: 20px 20px;
   text-align: left;
-  margin: 0px 0;
+  margin-top: 100px;
 }
 
-.Contact-section {
-  flex: 1;
-  text-align: center;
-  margin: 50px 20px;
-}
-
+.Contact-section, 
 .CV-section {
-  flex: 1;
+  flex:1;
   text-align: center;
   margin: 50px 20px;
 }
