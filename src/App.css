@@ -3,25 +3,25 @@ body {
   background-color: rgb(251, 243, 215);
 }
 
-.App {
+.Home {
   display: flex;
   flex-direction: column;
   align-items:center;
   min-height: 100vh;
 }
 
-.App-header {
+.Home-header {
   text-align: center;
   margin: 20px 0;
 }
 
-.App-header h1 {
+.Home-header h1 {
   font-size: 3rem;
   margin-bottom: 10px;
   color: rgb(59, 77, 3);
 }
 
-.App-header p {
+.Home-header p {
   font-size: 1.2rem;
   color: #777;
 }
@@ -89,7 +89,7 @@ body {
   
 }
 .Certificates-section h2 {
-  margin-left: 100px;
+  margin-left: 200px;
  
 }
 
@@ -107,7 +107,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 20px 20px;
+  padding: 20px;
   text-align: left;
   margin-top: 100px;
 }
@@ -117,7 +117,17 @@ body {
   flex:1;
   text-align: center;
   margin: 50px 20px;
+  
 }
+.CV-section {
+  margin-left: 00px; /* Add a bit of distance between the sections */
+ 
+}
+
+.Contact-section{
+  margin-right: 250px; /* Add a bit of distance between the sections */
+}
+
 
 .Contact-columns {
   display: flex;

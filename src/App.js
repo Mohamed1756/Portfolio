@@ -1,21 +1,15 @@
 import React from 'react';
-import { Router, Route } from 'react-router-dom';
-import Home from './home';
-import Projects from './projects';
+import { Routes, Route } from 'react-router-dom';
+import Home from './home'; // Ensure correct file name
+import Projects from './projects'; // Update with your actual Projects component import
 
 function App() {
   return (
-    <div className="App">
-      <div className="App">
-      {/* Your header and other components */}
-      <Router>
-        <Route exact path="/" component={Home} />
-        <Route path="/projects" component={Projects} />
-        {/* Add more routes as needed */}
-      </Router>
-      {/* Other content */}
-    </div>
-     
+    <div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<Projects />} />
+      </Routes>
     </div>
   );
 }

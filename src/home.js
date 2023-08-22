@@ -4,8 +4,8 @@ import './App.css'
 
 function Home() {
   return (
-    <div className="App">
-    <header className="App-header">
+    <div className="Home">
+    <header className="Home-header">
        <h1>NAME</h1>
        <p>SOFTWARE ENGINEER | NYC</p>
     </header>
@@ -84,15 +84,13 @@ function Home() {
          <div className="CV-content">
             
             <a className="CV-button" href="/MohamedCV.pdf" target="_blank" rel="noopener noreferrer">
-             Download My CV (PDF)
+             Download My CV
             </a>
          </div>
       </div>
    </div>
  </div>
 
-  
-  
   );
 }
 
