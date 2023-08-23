@@ -1,0 +1,56 @@
+.projects-header {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .projects-header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: rgb(59, 77, 3);
+  }
+  
+  .projects-header p {
+    font-size: 1.2rem;
+    color: #777;
+  }
+  .Projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+  }
+  
+  .Project-item {
+    position: relative;
+    text-align: center;
+    padding: 100px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    
+  }
+  
+  .Project-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .Project-item h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .Project-links {
+    position: absolute;
+    bottom: 0; /* Position the links at the bottom */
+    left: 0; /* Adjust horizontal position if needed */
+    right: 0; /* Adjust horizontal position if needed */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  } 
+
+  .Project-links a {
+    display: block;
+    margin-top: 10px;
+  }
