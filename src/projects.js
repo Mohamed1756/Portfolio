@@ -9,49 +9,49 @@ function Projects() {
       <p>Explore</p>
       </header>
       <div className='Projects-grid'>
-        <div className='Project-item'>
-          <img src='project1.jpg' alt='Project 1' />
-          <h2>Project Title 1</h2>
+      <div className='Project-item'>
+          <h2>SummarEase</h2>
+          <img src='test2.png' alt='Project 1' />
           <div className='Project-links'>
             <a href='#'>Live</a>
             <a href='#'>GitHub</a>
           </div>
         </div>
         <div className='Project-item'>
-          <img src='project2.jpg' alt='Project 2' />
           <h2>Project Title 2</h2>
+          <img src='test5.png' alt='Project 2' />
           <div className='Project-links'>
             <a href='#'>Live</a>
             <a href='#'>GitHub</a>
           </div>
         </div>
         <div className='Project-item'>
-          <img src='project3.jpg' alt='Project 3' />
-          <h2>Project Title 3</h2>
+          <h2>Binance Liquidations Data</h2>
+          <img src='test4.png' alt='Project 3' />
           <div className='Project-links'>
             <a href='#'>Live</a>
             <a href='#'>GitHub</a>
           </div>
         </div>
         <div className='Project-item'>
-          <img src='project4.jpg' alt='Project 4' />
           <h2>Project Title 4</h2>
+          <img src='email.png' alt='Project 4' />
           <div className='Project-links'>
             <a href='#'>Live</a>
             <a href='#'>GitHub</a>
           </div>
         </div>
         <div className='Project-item'>
-          <img src='project5.jpg' alt='Project 5' />
           <h2>Project Title 5</h2>
+          <img src='test8.png' alt='Project 5' />
           <div className='Project-links'>
             <a href='#'>Live</a>
             <a href='#'>GitHub</a>
           </div>
         </div>
         <div className='Project-item'>
-          <img src='project6.jpg' alt='Project 6' />
           <h2>Project Title 6</h2>
+          <img src='test.png' alt='Project 6' />
           <div className='Project-links'>
             <a href='#'>Live</a>
             <a href='#'>GitHub</a>
