@@ -25,16 +25,70 @@ body {
   font-size: 1.2rem;
   color: #777;
 }
+.skill h4 {
+  text-align: center; /* Center-align the h4 titles */
+  margin: 0; /* Remove default margin to prevent extra space */
+  border-right: 1px solid #ddd; /* Add border on the right side of each skill category */
+  padding-right: 15px; /* Add some spacing between the title and border */
+}
+
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px; /* Add vertical spacing between rows */
+}
+
+.skill-row {
+  display: flex;
+  gap: 100px; /* Add horizontal spacing between categories */
+}
+
+.skill {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.skill-icon {
+  width: 50px;
+  height: 50px;
+}
+
+/* ... Other styles ... */
+
+
+/* Categorize based on your provided information */
+
+/* Languages */
+.skill.languages {
+  margin-bottom: 20px;
+}
+
+/* Front-End */
+.skill.frontend {
+  margin-bottom: 20px;
+}
+
+/* Databases */
+.skill.databases {
+  margin-bottom: 20px;
+}
+
+/* Backend */
+.skill.backend {
+  margin-bottom: 20px;
+}
+
 
 /* Skills and Certificates Sections */
 .Skills-certificates-section {
-  display: flex;
+  display:flex;
   justify-content: space-between;
-  align-items: flex-start;
+
   padding: 20px 20px;
   text-align: left;
-  
-  margin: 0px 0;
   height:auto;
 }
 .Skills-section h2{
@@ -78,7 +132,7 @@ body {
 }
 
 .Certificate-item {
-  flex-basis: calc(50% - 15px); /* Adjust width to fit two items in a row with some spacing */
+  flex-basis: calc(50% - 10px); /* Adjust width to fit two items in a row with some spacing */
   margin-left: 50px; /* Add spacing between certificate items */
   margin-top: 20px;
   white-space: nowrap;
@@ -103,6 +157,7 @@ body {
   text-align: center;
   margin-top: 100px;
 }
+
 .CV-Contact-section {
   display: flex;
   justify-content: space-between;

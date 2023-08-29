@@ -21,6 +21,7 @@
   
   .Project-item {
     position: relative;
+    font-weight: 600;
     text-align: center;
     padding: 20px; /* Reduce padding for fixed height */
     border: 1px solid #ddd;
@@ -38,25 +39,35 @@
     border-radius: 8px; /* Apply border radius for a softer look */
     transition: transform 0.3s, border-color 0.3s; /* Add smooth transitions */
 }
+
 .Project-item img[src="email.png"] {
-  max-width: 60%;
-  max-height: 100%;
-  width: auto;
-  height: auto;
-  object-fit: contain;
+
+  width: 65%;
+  height: 60%;
+  object-fit:unset
+ 
 }
 
+.Project-item img[src="test5.png"],
+.Project-item img[src="betterLife.png"] {
+  filter: brightness(1); /* Adjust the value for desired brightness */
+}
+
+.Project-item img[src="betterLife.png"]{
+  filter: brightness(1.1);
+}
 
 .Project-item img:hover {
     transform: scale(1.05); /* Apply a slight scale-up effect on hover */
     border-color: #ff5733; /* Change border color on hover for extra emphasis */
+    
 }
 
   .Project-item h2 {
     font-size: 1rem;
     margin-top: 10px;
   }
-  
+
 
   .Project-links {
     position: absolute;
@@ -72,4 +83,27 @@
   .Project-links a {
     display: block;
     margin-top: 10px;
+  }
+
+  .Link-tbc {
+    position: relative;
+  }
+  
+  .Link-tbc::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: -25px; /* Adjust as needed */
+    left: calc(100% + 10px); /* Position next to the link */
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 5px;
+    font-size: 14px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .Link-tbc:hover::before {
+    opacity: 1;
   }
