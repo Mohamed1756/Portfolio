@@ -124,3 +124,13 @@
   .Link-tbc:hover::before {
     opacity: 1;
   }
+  .Link-tbc, .GitHub-link,.Live-btn {
+    color: #007bff; /* Blue link color */
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .Link-tbc:hover, .GitHub-link:hover {
+    color: #0056b3; /* Darker blue link hover color */
+  }
+ 

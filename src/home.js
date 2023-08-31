@@ -3,7 +3,12 @@ import { Link } from 'react-router-dom';
 import './App.css'
 
 function Home() {
-   
+   // Add this to your JavaScript file
+window.addEventListener('load', () => {
+   const homeElement = document.querySelector('.Home');
+   homeElement.style.opacity = 1; // Show the content after the page is loaded
+ });
+ 
   return (
     <div className="Home">
     <header className="Home-header">
@@ -16,7 +21,7 @@ function Home() {
     interest in creating seamless user experiences through{" "}
     <strong>frontend</strong> and <strong>backend technologies</strong>.<br />
     <br />
-    I'm captivated by emerging tech trends, from <strong>AI</strong> and{" "}
+    I'm intrigued by emerging tech trends, from <strong>AI</strong> and{" "}
     <strong>machine learning</strong> to exploring the potential of{" "}
     <strong>web3</strong> and <strong>blockchain</strong>.
   </p>

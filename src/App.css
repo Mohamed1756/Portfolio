@@ -2,12 +2,23 @@ body {
   margin: 0;
   background-color: rgb(251, 243, 215);
 }
+/* Add this to your CSS */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 .Home {
   display: flex;
   flex-direction: column;
   align-items:center;
   min-height: 100vh;
+  opacity: 0; /* Initially hidden */
+  animation: fadeIn 0.7s ease-in-out forwards; /* Apply the animation */
 }
 
 .Home-header {
